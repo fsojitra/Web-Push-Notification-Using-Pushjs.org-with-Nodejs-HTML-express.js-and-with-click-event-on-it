@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Push.js</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="push.js"></script>
+	<script type="text/javascript">
+		// permission for push
+		Push.Permission.request();
+
+		function myFunction() {
+			Push.create("Hello world!",{
+				body: "This is example of Push.js",
+				icon: '/logo.png',
+				timeout: 5000,
+				onClick: function () {
+					setRandomColor();
+					window.focus();
+					this.close();
+				}
+			});
+		}
+		function getRandomColor() {
+			var letters = '0123456789ABCDEF';
+			var color = '#';
+			for (var i = 0; i < 6; i++) {
+				color += letters[Math.floor(Math.random() * 16)];
+			}
+			return color;
+		}
+		function setRandomColor() {
+			$("#colorpad").css("color", getRandomColor());
+		}
+	</script>
+</head>
+<body>
+	<div style="text-align: center;">
+		<button onclick="myFunction()" style="background: #76B3FA; border-radius:100px; padding:10px 30px;color:#fff;text-decoration: none;font-size:1.45em; margin:0 15px;">Click me for notification</button>
+	</div>
+
+	<div style="text-align: center;">
+		<span style="border-radius:100px; padding:20px 60px;color:#fff;text-decoration: none;font-size:1.45em; margin:0 15px; color: #76B3FA;" id="colorpad">Color of this text will be changed when you click on notification</span>
+	</div>
+
+</body>
+</html>
