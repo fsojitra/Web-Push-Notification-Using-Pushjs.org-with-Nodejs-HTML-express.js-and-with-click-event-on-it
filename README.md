@@ -24,7 +24,7 @@ You need to have installed Node.js, NPM in your System
 Code is Running on 
 + http://localhost:3000/
 
-you have to allow notification then you can click on button "Click me for notification" and you will got notification when you click on notification text below that will change color randomly as i set onClick event on Notification 
+you have to allow notification then you can click on button "Click me for notification" and you will get notification when you click on notification text below that will change color randomly as i set onClick event on Notification 
 
 ## You can customize your notification as you want check below link
 + https://pushjs.org/docs/options
