@@ -2,7 +2,7 @@
 
 This is example of Web Push Notification Using Pushjs.org with Nodejs,HTML,express.js. I have also put click event on notification that will change text color randomly. 
 
-# If you want to use Pushjs.js in your project
+## If you want to use Pushjs.org in your project
 
 clone or download from
 + https://github.com/Nickersoft/push.js
@@ -13,11 +13,11 @@ you just need to add push.js and serviceWorker.js in your public folder and then
 
 You need to have installed Node.js, NPM in your System
 
-## To Install
+### To Install
 
 `npm install`
 
-## Run
+### Run
 
 `nodemon server.js`
 
