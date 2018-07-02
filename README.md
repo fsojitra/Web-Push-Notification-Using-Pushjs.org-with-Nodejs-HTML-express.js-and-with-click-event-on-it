@@ -29,4 +29,4 @@ you have to allow notification then you can click on button "Click me for notifi
 ## You can customize your notification as you want check below link
 + https://pushjs.org/docs/options
 
-:star2:
+:star2: :tada:
